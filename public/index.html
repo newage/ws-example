@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+</head>
+<script src="js/client.js"></script>
+<body>
+<form onsubmit="socket.send(document.getElementById('message').value)">
+    <input type="text" name="message" id="message"/>
+    <input type="submit"/>
+</form>
+</body>
+</html>
